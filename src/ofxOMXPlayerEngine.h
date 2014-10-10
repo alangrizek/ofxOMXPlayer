@@ -61,6 +61,7 @@ class ofxOMXPlayerEngine: public OMXThread
 		bool		isTextureEnabled;
 
 		void		stepFrameForward();
+		void		setFrame(int frame);
 		void		increaseVolume();
 		void		decreaseVolume();
 

@@ -616,6 +616,16 @@ void ofxOMXPlayerEngine::stepFrameForward()
 	clock.OMXStep(1);
 }
 
+void ofxOMXPlayerEngine::setFrame(int frame)
+{
+	if(frame < getTotalNumFrames() && frame >= 0){
+		if (!isPaused())
+		{
+			setPaused(true);
+		}
+		clock.OMXStep(frame - getCurrentFrame());
+	}
+}
 
 bool ofxOMXPlayerEngine::isPlaying()
 {

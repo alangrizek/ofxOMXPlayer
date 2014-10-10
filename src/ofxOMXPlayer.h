@@ -32,6 +32,7 @@ class ofxOMXPlayer
 
 		double		getMediaTime();
 		void		stepFrameForward();
+		void		setFrame(int frame);
 		void		increaseVolume();
 		void		decreaseVolume();
 

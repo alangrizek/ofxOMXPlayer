@@ -389,6 +389,14 @@ void ofxOMXPlayer::stepFrameForward()
 	}
 }
 
+void ofxOMXPlayer::setFrame(int frame)
+{
+	if (engine)
+	{
+		engine->setFrame(frame);
+	}
+}
+
 void ofxOMXPlayer::increaseVolume()
 {
 	if (engine)
